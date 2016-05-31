@@ -174,7 +174,7 @@ class Clirials(cmd.Cmd):
         if last_command in ['exit', 'save']:
             self.counter = 0
             return stop
-        elif last_command in ['add', 'delete', 'set', 'update']:
+        elif last_command in ['add', 'delete', 'set', 'update', 'one']:
             self.lastcmd_was_save = False
             self.counter += 1                   # change in data --> counter++
         if self.counter > 4:
